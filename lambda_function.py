@@ -1,15 +1,8 @@
 """
 Python3 Module to publish log metrics from Cloudwatch to the AWS MQTT broker. An MQTT client can ingest these
 log metrics and store them as time series data.
-For our use case OpenNMS was the MQTT client and it stored the data in Cassandra.
 
-Triggers on an metrics log event from Cloudwatch (Stream Log Group to Lambda)
-Uncompress the log stream and decode it to a string
-Enrich it with IP address data
-Send it as a bytearray to the MQTT Broker topic aws-rds-data
-
-Created: 24/06/2018 by chewborg @ RIPE NCC and iNOG hackathon 18
-
+Changes variables as needed
 """
 import gzip
 import logging
